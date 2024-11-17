@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Five Personality Test</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Big Five Personality Test</h1>
+
+    <form id="survey-form">
+        <h2>Now you see a number of statements about how you see yourself. For each statement, select one of the seven options that fits best.</h2>
+
+        <fieldset>
+            <legend><b>I see myself as...</b></legend>
+            <label>Extroverted, enthusiastic</label>
+            <input type="radio" name="tipi1" value="7" required> Agree strongly
+            <input type="radio" name="tipi1" value="6"> Agree moderately
+            <input type="radio" name="tipi1" value="5"> Agree a little
+            <input type="radio" name="tipi1" value="4"> Neither agree nor disagree
+            <input type="radio" name="tipi1" value="3"> Disagree a little
+            <input type="radio" name="tipi1" value="2"> Disagree moderately
+            <input type="radio" name="tipi1" value="1"> Disagree strongly
+            <br><br>
+
+            <label>Critical, quarrelsome</label>
+            <input type="radio" name="tipi2" value="1" required> Agree strongly
+            <input type="radio" name="tipi2" value="2"> Agree moderately
+            <input type="radio" name="tipi2" value="3"> Agree a little
+            <input type="radio" name="tipi2" value="4"> Neither agree nor disagree
+            <input type="radio" name="tipi2" value="5"> Disagree a little
+            <input type="radio" name="tipi2" value="6"> Disagree moderately
+            <input type="radio" name="tipi2" value="7"> Disagree strongly
+            <br><br>
+
+            <!-- Add more questions similarly here for tipi3 to tipi10 -->
+        </fieldset>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div id="feedback" style="display:none;">
+        <h3>Your BIG5 dimensions are as follows:</h3>
+        <ul>
+            <li>Extraversion: <span id="extraversion"></span></li>
+            <li>Agreeableness: <span id="agreeableness"></span></li>
+            <li>Conscientiousness: <span id="conscientiousness"></span></li>
+            <li>Emotional stability: <span id="emotionally_stable"></span></li>
+            <li>Openness to experience: <span id="openness"></span></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
